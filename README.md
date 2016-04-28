@@ -22,19 +22,19 @@ compile project(':UITemplateView')
 |---|---|
 |setLoginLogo(int resId)| 设置登录界面logo
 |setLoginLogoVisibility(int visibility)| 设置登录界面logo显示状态 
-|setLoginBackgroundResource(@DrawableRes int resId)|设置登录界面背景图片
-|setLoginBackgroundColor(@ColorInt int color)|设置登录界面背景颜色
-|setLoginNameIcon(@DrawableRes int resId)|设置登录名输入框图标
+|setLoginBackgroundResource(int resId)|设置登录界面背景图片
+|setLoginBackgroundColor(int color)|设置登录界面背景颜色
+|setLoginNameIcon(int resId)|设置登录名输入框图标
 |setLoginNameHint(String text)|设置登录名输入框提示文字
-|setLoginNameBackground(@DrawableRes int resId)|设置登录名输入框背景样式
-|setLoginPasswordIcon(@DrawableRes int resId)|设置密码输入框图标
+|setLoginNameBackground(int resId)|设置登录名输入框背景样式
+|setLoginPasswordIcon(int resId)|设置密码输入框图标
 |setLoginPasswordHint(String text)|设置密码输入框提示文字
-|setLoginPasswordBackground(@DrawableRes int resId)|设置密码输入框背景样式
-|setLoginButtonBackground(@DrawableRes int resId)|设置登录按钮背景样式
+|setLoginPasswordBackground(int resId)|设置密码输入框背景样式
+|setLoginButtonBackground(int resId)|设置登录按钮背景样式
 |setLoginButtonText(String text)|设置登录按钮文字
-|setLoginButtonTextColor(@ColorInt int color)|设置登录按钮文字颜色
+|setLoginButtonTextColor(int color)|设置登录按钮文字颜色
 |setForgotButtonText(String text)|设置忘记密码按钮文字（你也可以换成其他的功能）
-|setForgotButtonTextColor(@ColorInt int color)|设置忘记密码文字颜色
+|setForgotButtonTextColor(int color)|设置忘记密码文字颜色
 |getLoginName()|获取输入的登录名
 |getLoginPassword()|获取输入的密码
 |setLoginListener(LoginListener loginListener)|设置登录按钮点击事件
