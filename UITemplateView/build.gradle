@@ -28,8 +28,8 @@ dependencies {
 }
 
 
-def siteUrl = 'https://github.com/youth5201314/banner' // 项目的主页
-def gitUrl = 'https://github.com/youth5201314/banner.git' // Git仓库的url
+def siteUrl = 'https://github.com/youth5201314/UITemplateView' // 项目的主页
+def gitUrl = 'https://github.com/youth5201314/UITemplateView.git' // Git仓库的url
 group = "com.youth.template" //一般填你唯一的包名
 //gradlew bintrayUpload
 install {

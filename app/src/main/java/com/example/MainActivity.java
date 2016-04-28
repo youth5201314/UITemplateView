@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view=new LoginTemplateView(this);
-        view.setLgoinButtonText("登录");
+//        view.setLgoinButtonText("登录");
         view.setLoginListener(new LoginTemplateView.LoginListener() {
             @Override
             public void login(View v) {
