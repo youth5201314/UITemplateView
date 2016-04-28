@@ -19,7 +19,7 @@ compile project(':UITemplateView')
 ```
 ##方法
 |方法名|描述
-|:---:|:---:|
+|---|---|
 |setLoginLogo(int resId)| 设置登录界面logo
 |setLoginLogoVisibility(int visibility)| 设置登录界面logo显示状态 
 |setLoginBackgroundResource(@DrawableRes int resId)|设置登录界面背景图片
