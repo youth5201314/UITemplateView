@@ -24,7 +24,7 @@ compile project(':UITemplateView')
 |setImages(Object[] imagesUrl)| 设置轮播图片 
 |setOnBannerClickListener|设置点击事件
 
-##使用步骤
+## 使用方法
 
 ####1.在布局文件中添加Banner
 ```xml
@@ -35,22 +35,20 @@ compile project(':UITemplateView')
 ```
 #### 3.在Activity或者Fragment中配置Banner 
 ```java
-private Banner banner;
-String[] images= new String[] {"url"};
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_main);
-    banner = (Banner) findViewById(R.id.banner);
-    banner.setDelayTime(500);//设置轮播间隔时间
-    banner.setImages(images);//可以选择设置图片网址，或者资源文件
-    banner.setOnBannerClickListener(new Banner.OnBannerClickListener() {//设置点击事件
-        @Override
-        public void OnBannerClick(View view, int position) {
-
-        }
-    });
-
+public class MainActivity extends AppCompatActivity {
+    LoginTemplateView view;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        view=new LoginTemplateView(this);
+        view.setLoginListener(new LoginTemplateView.LoginListener() {
+            @Override
+            public void login(View v) {
+                Toast.makeText(getApplicationContext(),view.getUsername(),Toast.LENGTH_SHORT).show();
+            }
+        });
+        setContentView(view);
+    }
 }
 ```
 
