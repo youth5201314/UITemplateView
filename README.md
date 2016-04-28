@@ -17,7 +17,7 @@ dependencies{
 ```groovy
 compile project(':UITemplateView')
 ```
-##方法
+## 登录模板方法
 |方法名|描述
 |---|---|
 |setLoginLogo(int resId)| 设置登录界面logo
@@ -44,7 +44,6 @@ compile project(':UITemplateView')
 
 #### 方法一、在布局文件中添加模板，然后在Activity中获取
 ```xml
-比如登录界面模板
 <com.youth.template.LoginTemplateView
     android:id="@+id/template"
     android:layout_width="match_parent"

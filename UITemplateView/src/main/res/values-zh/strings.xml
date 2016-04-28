@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UI 模板</string>
+    <string name="login_name">E-mail address</string>
+    <string name="login_password">••••••••</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="login_btn_name">登录</string>
+</resources>

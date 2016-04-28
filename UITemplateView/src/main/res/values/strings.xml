@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TemplateView</string>
+    <string name="login_name">E-mail address</string>
+    <string name="login_password">••••••••</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_btn_name">Sign in</string>
 </resources>

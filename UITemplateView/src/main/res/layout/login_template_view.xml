@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing20"
-            android:hint="E-mail address"
+            android:hint="@string/login_name"
             android:drawablePadding="@dimen/spacing10"
             android:textSize="@dimen/text_middle"
             android:textColor="@color/text_black"
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing10"
-            android:hint="••••••••"
+            android:hint="@string/login_password"
             android:textSize="@dimen/text_middle"
             android:drawablePadding="@dimen/spacing10"
             android:textColor="@color/text_black"
@@ -42,12 +42,12 @@
         <Button
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/spacing40"
             android:background="@drawable/btn_background"
             android:textSize="@dimen/text_large"
             android:textColor="@android:color/white"
             android:layout_marginTop="@dimen/spacing20"
-            android:text="Sign in"/>
+            android:text="@string/login_btn_name"/>
         <TextView
             android:id="@+id/login_forgot"
             android:layout_width="wrap_content"
@@ -55,6 +55,6 @@
             android:layout_marginTop="@dimen/spacing10"
             android:textColor="@color/text_gray"
             android:textSize="@dimen/text_middle"
-            android:text="Forgot password?"/>
+            android:text="@string/forgot_password"/>
     </LinearLayout>
 </RelativeLayout>

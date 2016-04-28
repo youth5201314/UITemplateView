@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         view.setLoginListener(new LoginTemplateView.LoginListener() {
             @Override
             public void login(View v) {
-                Toast.makeText(getApplicationContext(),view.getUsername(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),view.getLoginName(),Toast.LENGTH_SHORT).show();
             }
         });
     }
