@@ -39,7 +39,7 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here项目描述
-                name 'Android图片轮播控件'
+                name 'Android UI 模板'
                 url siteUrl
                 licenses {
                     license {
@@ -95,7 +95,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "banner"    //发布到JCenter上的项目名字
+        name = "UITemplateView"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
