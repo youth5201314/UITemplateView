@@ -13,12 +13,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view=new LoginTemplateView(this);
+        setContentView(view);
+        //设置点击事件
         view.setLoginListener(new LoginTemplateView.LoginListener() {
             @Override
             public void login(View v) {
                 Toast.makeText(getApplicationContext(),view.getUsername(),Toast.LENGTH_SHORT).show();
             }
         });
-        setContentView(view);
     }
 }

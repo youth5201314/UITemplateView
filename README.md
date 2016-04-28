@@ -18,22 +18,50 @@ dependencies{
 compile project(':UITemplateView')
 ```
 ##方法
-|方法名|参数|描述
+|方法名|描述
 |:---:|:---:|
-|setDelayTime(int time)| 设置轮播图片间隔时间（默认为2000）
-|setImages(Object[] imagesUrl)| 设置轮播图片 
-|setOnBannerClickListener|设置点击事件
+|setLoginLogo(int resId)| 设置登录界面logo
+|setLoginLogoVisibility(int visibility)| 设置登录界面logo显示状态 
+|setLoginBackgroundResource(@DrawableRes int resId)|设置登录界面背景图片
+|setLoginBackgroundColor(@ColorInt int color)|设置登录界面背景颜色
+|setLoginNameIcon(@DrawableRes int resId)|设置登录名输入框图标
+|setLoginNameHint(String text)|设置登录名输入框提示文字
+|setLoginNameBackground(@DrawableRes int resId)|设置登录名输入框背景样式
+|setLoginPasswordIcon(@DrawableRes int resId)|设置密码输入框图标
+|setLoginPasswordHint(String text)|设置密码输入框提示文字
+|setLoginPasswordBackground(@DrawableRes int resId)|设置密码输入框背景样式
+|setLoginButtonBackground(@DrawableRes int resId)|设置登录按钮背景样式
+|setLoginButtonText(String text)|设置登录按钮文字
+|setLoginButtonTextColor(@ColorInt int color)|设置登录按钮文字颜色
+|setForgotButtonText(String text)|设置忘记密码按钮文字（你也可以换成其他的功能）
+|setForgotButtonTextColor(@ColorInt int color)|设置忘记密码文字颜色
+|getLoginName()|获取输入的登录名
+|getLoginPassword()|获取输入的密码
+|setLoginListener(LoginListener loginListener)|设置登录按钮点击事件
+|setForgotListener(ForgotListener forgotListener)|设置忘记密码点击事件
 
-## 使用方法
+## 使用方法（以登录界面模板为例）
 
-####1.在布局文件中添加Banner
+#### 方法一、在布局文件中添加模板，然后在Activity中获取
 ```xml
-<com.youth.banner.Banner
-    android:id="@+id/banner"
+比如登录界面模板
+<com.youth.template.LoginTemplateView
+    android:id="@+id/template"
     android:layout_width="match_parent"
     android:layout_height="200dp" />
 ```
-#### 3.在Activity或者Fragment中配置Banner 
+```java
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        LoginTemplateView view=(LoginTemplateView)findViewById(R.id.template);
+        //接下来就通过api中方法设置界面样式、获取界面输入值、设置点击事件
+    }
+}
+```
+#### 方法二、直接在Activity中创建
 ```java
 public class MainActivity extends AppCompatActivity {
     LoginTemplateView view;
@@ -41,13 +69,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view=new LoginTemplateView(this);
-        view.setLoginListener(new LoginTemplateView.LoginListener() {
-            @Override
-            public void login(View v) {
-                Toast.makeText(getApplicationContext(),view.getUsername(),Toast.LENGTH_SHORT).show();
-            }
-        });
         setContentView(view);
+        //设置点击事件
+        view.setLoginListener(new LoginTemplateView.LoginListener() {
+           @Override
+           public void login(View v) {
+               Toast.makeText(getApplicationContext(),view.getLoginName(),Toast.LENGTH_SHORT).show();
+           }
+        });
     }
 }
 ```

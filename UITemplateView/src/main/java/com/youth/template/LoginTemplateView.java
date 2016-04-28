@@ -60,41 +60,41 @@ public class LoginTemplateView extends FrameLayout {
     public void setLoginLogoVisibility(int visibility){
         loginLogo.setVisibility(visibility);
     }
-    public void setLoginLogoBackgroundResource(@DrawableRes int resId){
-        loginLogo.setBackgroundResource(resId);
+    public void setLoginBackgroundResource(@DrawableRes int resId){
+        loginTemplate.setBackgroundResource(resId);
     }
-    public void setLoginLogoBackgroundColor(@ColorInt int color){
-        loginLogo.setBackgroundColor(color);
+    public void setLoginBackgroundColor(@ColorInt int color){
+        loginTemplate.setBackgroundColor(color);
     }
-    public void setUsernameIcon(@DrawableRes int resId){
+    public void setLoginNameIcon(@DrawableRes int resId){
         Drawable drawable= getResources().getDrawable(resId);
         drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
         username.setCompoundDrawables(drawable,null,null,null);
     }
-    public void setUsernameHint(String text){
+    public void setLoginNameHint(String text){
         username.setHint(text);
     }
-    public void setUsernameBackground(@DrawableRes int resId){
+    public void setLoginNameBackground(@DrawableRes int resId){
         username.setBackgroundResource(resId);
     }
-    public void setPwdIcon(@DrawableRes int resId){
+    public void setLoginPasswordIcon(@DrawableRes int resId){
         Drawable drawable= getResources().getDrawable(resId);
         drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
         pwd.setCompoundDrawables(drawable,null,null,null);
     }
-    public void setPwdHint(String text){
+    public void setLoginPasswordHint(String text){
         pwd.setHint(text);
     }
-    public void setPwdBackground(@DrawableRes int resId){
+    public void setLoginPasswordBackground(@DrawableRes int resId){
         pwd.setBackgroundResource(resId);
     }
-    public void setLgoinButtonBackground(@DrawableRes int resId){
+    public void setLoginButtonBackground(@DrawableRes int resId){
         btnLogin.setBackgroundResource(resId);
     }
-    public void setLgoinButtonText(String text){
+    public void setLoginButtonText(String text){
         btnLogin.setText(text);
     }
-    public void setLgoinButtonTextColor(@ColorInt int color){
+    public void setLoginButtonTextColor(@ColorInt int color){
         btnLogin.setTextColor(color);
     }
     public void setForgotButtonText(String text){
@@ -103,10 +103,10 @@ public class LoginTemplateView extends FrameLayout {
     public void setForgotButtonTextColor(@ColorInt int color){
         forgotPwd.setTextColor(color);
     }
-    public String getUsername(){
+    public String getLoginName(){
         return username.getText().toString();
     }
-    public String getPwd(){
+    public String getLoginPassword(){
         return pwd.getText().toString();
     }
     public void login(){
