@@ -1,9 +1,4 @@
 <resources>
-    <!-- Customize your theme here. -->
-    <color name="colorPrimary">@color/main</color>
-    <color name="colorPrimaryDark">@color/main</color>
-    <color name="colorAccent">@color/main</color>
-    <!-- Customize your theme here. -->
 
     <color name="main">#5856D6</color>
     <color name="text_gray">#A1A1A1</color>
