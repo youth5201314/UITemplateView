@@ -10,7 +10,7 @@
 ##Gradle
 ```groovy
 dependencies{
-    compile 'com.youth.template:UITemplateView:1.0.0'  
+    compile 'com.youth.template:UITemplateView:1.0.1'  
 }
 ```
 或者引用本地lib
@@ -35,10 +35,13 @@ compile project(':UITemplateView')
 |setLoginButtonTextColor(int color)|设置登录按钮文字颜色
 |setForgotButtonText(String text)|设置忘记密码按钮文字（你也可以换成其他的功能）
 |setForgotButtonTextColor(int color)|设置忘记密码文字颜色
+|setRegisterButtonText(String text)|设置注册按钮文字（你也可以换成其他的功能）
+|setRegisterButtonTextColor(int color)|设置注册文字颜色
 |getLoginName()|获取输入的登录名
 |getLoginPassword()|获取输入的密码
-|setLoginListener(LoginListener loginListener)|设置登录按钮点击事件
-|setForgotListener(ForgotListener forgotListener)|设置忘记密码点击事件
+|setLoginListener(this)|设置登录按钮点击事件
+|setForgotListener(this)|设置忘记密码点击事件
+|setRegisterListener(this)|设置忘记密码点击事件
 
 ## 使用方法（以登录界面模板为例）
 
@@ -47,7 +50,7 @@ compile project(':UITemplateView')
 <com.youth.template.LoginTemplateView
     android:id="@+id/template"
     android:layout_width="match_parent"
-    android:layout_height="200dp" />
+    android:layout_height="match_parent" />
 ```
 ```java
 public class MainActivity extends AppCompatActivity {

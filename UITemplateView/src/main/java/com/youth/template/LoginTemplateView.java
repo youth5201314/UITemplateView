@@ -21,9 +21,10 @@ public class LoginTemplateView extends FrameLayout {
     private EditText username;
     private EditText pwd;
     private Button btnLogin;
-    private TextView forgotPwd;
+    private TextView forgotPwd,register;
     private LoginListener loginListener;
     private ForgotListener forgotListener;
+    private RegisterListener registerListener;
     public LoginTemplateView(Context context) {
         super(context);
         this.context = context;
@@ -50,7 +51,9 @@ public class LoginTemplateView extends FrameLayout {
         pwd = (EditText) view.findViewById(R.id.login_pwd);
         btnLogin = (Button) view.findViewById(R.id.login_btn);
         forgotPwd = (TextView) view.findViewById(R.id.login_forgot);
+        register = (TextView) view.findViewById(R.id.login_register);
         login();
+        register();
         forgot();
     }
 
@@ -97,18 +100,28 @@ public class LoginTemplateView extends FrameLayout {
     public void setLoginButtonTextColor(@ColorInt int color){
         btnLogin.setTextColor(color);
     }
+
     public void setForgotButtonText(String text){
         forgotPwd.setText(text);
     }
     public void setForgotButtonTextColor(@ColorInt int color){
         forgotPwd.setTextColor(color);
     }
+
+    public void setRegisterButtonText(String text){
+        register.setText(text);
+    }
+    public void setRegisterButtonTextColor(@ColorInt int color){
+        register.setTextColor(color);
+    }
+
     public String getLoginName(){
         return username.getText().toString();
     }
     public String getLoginPassword(){
         return pwd.getText().toString();
     }
+
     public void login(){
         btnLogin.setOnClickListener(new OnClickListener() {
             @Override
@@ -129,7 +142,16 @@ public class LoginTemplateView extends FrameLayout {
             }
         });
     }
-
+    public void register(){
+        register.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(registerListener!=null){
+                    registerListener.register(v);
+                }
+            }
+        });
+    }
     public void setLoginListener(LoginListener loginListener) {
         this.loginListener = loginListener;
     }
@@ -138,11 +160,18 @@ public class LoginTemplateView extends FrameLayout {
         this.forgotListener = forgotListener;
     }
 
+    public void setRegisterListener(RegisterListener registerListener) {
+        this.registerListener = registerListener;
+    }
+
     public interface LoginListener {
         void login(View v);
     }
 
     public interface ForgotListener {
         void forgot(View v);
+    }
+    public interface RegisterListener {
+        void register(View v);
     }
 }

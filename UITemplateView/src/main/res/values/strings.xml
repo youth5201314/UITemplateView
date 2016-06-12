@@ -4,4 +4,5 @@
     <string name="login_password">••••••••</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="login_btn_name">Sign in</string>
+    <string name="login_register">Register</string>
 </resources>
