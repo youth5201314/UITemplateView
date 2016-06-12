@@ -47,7 +47,7 @@ compile project(':UITemplateView')
 <com.youth.template.LoginTemplateView
     android:id="@+id/template"
     android:layout_width="match_parent"
-    android:layout_height="200dp" />
+    android:layout_height="match_parent" />
 ```
 ```java
 public class MainActivity extends AppCompatActivity {
