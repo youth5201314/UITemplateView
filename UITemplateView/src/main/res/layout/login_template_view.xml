@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="@dimen/spacing40"
-        android:layout_marginRight="@dimen/spacing40"
+        android:layout_marginLeft="@dimen/UI_spacing40"
+        android:layout_marginRight="@dimen/UI_spacing40"
         android:orientation="vertical">
 
         <ImageView
@@ -24,33 +24,34 @@
             android:id="@+id/login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing20"
+            android:layout_marginTop="@dimen/UI_spacing20"
             android:drawableLeft="@drawable/login_email"
-            android:drawablePadding="@dimen/spacing10"
+            android:drawablePadding="@dimen/UI_spacing10"
             android:hint="@string/login_name"
-            android:textColor="@color/text_black"
-            android:textSize="@dimen/text_middle" />
+            android:textColor="@color/UI_text_black"
+            android:textSize="@dimen/UI_text_small" />
 
         <EditText
             android:id="@+id/login_pwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing10"
+            android:layout_marginTop="@dimen/UI_spacing10"
             android:drawableLeft="@drawable/login_pwd"
-            android:drawablePadding="@dimen/spacing10"
+            android:drawablePadding="@dimen/UI_spacing10"
             android:hint="@string/login_password"
-            android:textColor="@color/text_black"
-            android:textSize="@dimen/text_middle" />
+            android:inputType="textPassword"
+            android:textColor="@color/UI_text_black"
+            android:textSize="@dimen/UI_text_small" />
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/spacing40"
-            android:layout_marginTop="@dimen/spacing20"
+            android:layout_height="@dimen/UI_spacing40"
+            android:layout_marginTop="@dimen/UI_spacing20"
             android:background="@drawable/btn_background"
             android:text="@string/login_btn_name"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_large" />
+            android:textSize="@dimen/UI_text_middle" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -60,19 +61,19 @@
                 android:id="@+id/login_forgot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing10"
+                android:layout_marginTop="@dimen/UI_spacing10"
                 android:text="@string/forgot_password"
-                android:textColor="@color/text_gray"
-                android:textSize="@dimen/text_middle" />
+                android:textColor="@color/UI_text_gray"
+                android:textSize="@dimen/UI_text_small" />
 
             <TextView
                 android:id="@+id/login_register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing10"
+                android:layout_marginTop="@dimen/UI_spacing10"
                 android:text="@string/login_register"
-                android:textColor="@color/text_gray"
-                android:textSize="@dimen/text_middle"
+                android:textColor="@color/UI_text_gray"
+                android:textSize="@dimen/UI_text_small"
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
     </LinearLayout>

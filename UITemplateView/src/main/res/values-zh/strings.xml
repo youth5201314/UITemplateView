@@ -2,6 +2,6 @@
     <string name="login_name">用户名</string>
     <string name="login_password">密码</string>
     <string name="forgot_password">忘记密码?</string>
-    <string name="login_register">注册</string>
+    <string name="login_register">立即注册</string>
     <string name="login_btn_name">登录</string>
 </resources>

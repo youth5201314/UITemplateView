@@ -1,7 +1,7 @@
 <resources>
 
-    <color name="main">#5856D6</color>
-    <color name="text_gray">#A1A1A1</color>
-    <color name="text_black">#353535</color>
+    <color name="UI_main">#5856D6</color>
+    <color name="UI_text_gray">#A1A1A1</color>
+    <color name="UI_text_black">#353535</color>
 
 </resources>

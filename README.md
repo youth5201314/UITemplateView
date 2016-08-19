@@ -10,7 +10,7 @@
 ##Gradle
 ```groovy
 dependencies{
-    compile 'com.youth.template:UITemplateView:1.0.2'  
+    compile 'com.youth.template:UITemplateView:1.0.3'  
 }
 ```
 或者引用本地lib
