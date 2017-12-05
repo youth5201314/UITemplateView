@@ -1,9 +1,12 @@
 # Android UI模板
 <br>
 现在开发中很多界面都是经常出现，而且大同小异。所以就写了一个ui的模板，你可以通过设置图片颜色来改变界面的样式。简单的实现界面开发。
+
 ## 效果图
 ![效果示例](https://raw.githubusercontent.com/youth5201314/UITemplateView/master/image/login1.png)
+
 ### 联系方式
+<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=dffef7e7b589803242b5505fce2861454c2432d14db57fd4b43c4c816b71ac0a"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Android技术交流" title="Android技术交流"></a>
 * 邮箱地址： 1028729086@qq.com
 * 如果遇到问题和建议欢迎在给我发送邮件，希望让这个工程越来越完善。
 
