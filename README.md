@@ -6,7 +6,7 @@
 ![效果示例](https://raw.githubusercontent.com/youth5201314/UITemplateView/master/image/login1.png)
 
 ### 联系方式
-<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=dffef7e7b589803242b5505fce2861454c2432d14db57fd4b43c4c816b71ac0a"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="Android技术交流" title="Android技术交流"></a>
+<a target="_blank" href="shang.qq.com/wpa/qunwpa?idkey=dffef7e7b589803242b5505fce2861454c2432d14db57fd4b43c4c816b71ac0a"><img border="0" src="pub.idqqimg.com/wpa/images/group.png" alt="Android技术交流" title="Android技术交流"></a>
 * 邮箱地址： 1028729086@qq.com
 * 如果遇到问题和建议欢迎在给我发送邮件，希望让这个工程越来越完善。
 
